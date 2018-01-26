@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<!-- HEAD -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Zodiac Love Compatibility Tester</title>
+    <!-- font-awesome -->
+    <script src="https://use.fontawesome.com/9f24ccccec.js"></script>
+    <!-- google fonts -->
+    <!-- favicon -->
+    <link rel="icon" href="img\leo.png">
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- css links-->
+    <link rel="stylesheet" href="css\animate.css">
+    <link rel="stylesheet" href="css\flatdesign.css">
+    <link rel="stylesheet" href="css\main.css">
+  </head>
+<!-- BODY   -->
+  <body>
+    <!-- top -->
+    <div class="container red">
+      <!-- title -->
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h2>♥ ZODIAC ♥<br> LOVE COMPATIBILITY <br> CALCULATOR</h2>
+        </div>
+      </div>
+      <!-- inputs etc -->
+      <div class="row">
+        <div class="col-md-5 col-sm-4 text-center">
+          <input id="you" type="text" placeholder="Enter your sign here:">
+          <button class="button blue" onclick="saveyou()" type="button" name="button">Save</button>
+          <p id="userdisplay" class="paragraph pink">(Your Sign)</p>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center">
+          <img class="animated spin" src="img\Zodiac_Wheel.png" alt="">
+        </div>
+        <div class="col-md-5 col-sm-4 text-center">
+          <input id="partner" type="text" placeholder="Enter your partner's:">
+          <button class="button blue" onclick="savepartner()" type="button" name="button">Save</button>
+          <p id="partnerdisplay" class="paragraph pink">(Partner's sign)</p>
+        </div>
+      </div>
+      <!-- calculate button -->
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <button class="button green" onclick="calculate()" type="button" name="button">CALCULATE!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- bottom -->
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <br>
+        <div class="addhere"></div>
+        <p id="results" class="paragraph pink results">Your fortune:</p>
+      </div>
+    </div>
+
+
+
+
+    <!-- JQuery link-->
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+    <!-- Bootstrap.js link -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- main.js -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
